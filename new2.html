@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="firstname" onkeyup="getfullname()" placeholder="Enter firstname"/>
+
+    <input type="text" id="Surname" onkeyup="getfullname()" placeholder="Enter Surname"/>
+
+    <input type="text" id="Fullname" readonly/>
+
+    <script>
+        function getfullname(){
+            document.getElementById("fullname").value = "";
+            let fname = document.getElementById("firstname").value;
+            let sname = document.getElementById("Surname").value;
+            let fullname = fname + " " + sname;
+            document.getElementById("fullname").value = fullname;
+        }
+    </script>
+</body>
+</html>

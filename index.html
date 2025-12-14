@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome</h2>
+    <div id="app">
+        <p id="dispaly">Hello, World</p>
+        <p >I am the second p!</p>
+    </div>
+    <button onclick="changeName()" ondblclick="changeBack()">Push me</button>
+    <script>
+        function changeName(){
+            document.getElementById("dispaly").innerHTML = "I have pushed the button!";
+        }
+        function changeBack(){
+            document.getElementById("dispaly").innerHTML = "Hello, World";
+        }
+    </script>
+</body>
+</html>
